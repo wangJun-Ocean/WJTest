@@ -20,6 +20,7 @@
     [self rangTest:@"nsmj2"];
     NSLog(@"123");
     [self testRange];
+    NSLog(@"456");
 }
 
 //测试NSRange NSMutableCharacterSet
