@@ -26,6 +26,7 @@
 //测试NSRange NSMutableCharacterSet
 - (void)rangTest: (NSString *)str
 {
+    NSLog(@"789");
     NSMutableCharacterSet *allowedCharacterset = [[NSCharacterSet URLQueryAllowedCharacterSet] mutableCopy];
     [allowedCharacterset removeCharactersInString:str];
     static NSUInteger const batchSize = 2;
