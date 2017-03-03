@@ -50,6 +50,7 @@
 //反转字符串
 - (void)testRange
 {
+    NSLog(@"abc");
     NSString *temp1 = @"";
 //    NSString *temp2 = @"";
     NSString *str1 = @"1234";
