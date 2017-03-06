@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA428D7D1E69652B002322B6 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */; };
 		DAFBF9551DF93B34000B6720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF9541DF93B34000B6720 /* main.m */; };
 		DAFBF9581DF93B34000B6720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF9571DF93B34000B6720 /* AppDelegate.m */; };
 		DAFBF95B1DF93B34000B6720 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF95A1DF93B34000B6720 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA428D7B1E69652B002322B6 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
 		DAFBF9501DF93B34000B6720 /* WJTestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJTestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFBF9541DF93B34000B6720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAFBF9561DF93B34000B6720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				DAFBF9571DF93B34000B6720 /* AppDelegate.m */,
 				DAFBF9591DF93B34000B6720 /* ViewController.h */,
 				DAFBF95A1DF93B34000B6720 /* ViewController.m */,
+				DA428D7B1E69652B002322B6 /* UIViewController+Swizzling.h */,
+				DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */,
 				DAFBF95C1DF93B34000B6720 /* Main.storyboard */,
 				DAFBF95F1DF93B34000B6720 /* Assets.xcassets */,
 				DAFBF9611DF93B34000B6720 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA428D7D1E69652B002322B6 /* UIViewController+Swizzling.m in Sources */,
 				DAFBF95B1DF93B34000B6720 /* ViewController.m in Sources */,
 				DAFBF9581DF93B34000B6720 /* AppDelegate.m in Sources */,
 				DAFBF9551DF93B34000B6720 /* main.m in Sources */,
@@ -516,6 +522,7 @@
 				DAFBF97F1DF93B34000B6720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFBF9801DF93B34000B6720 /* Build configuration list for PBXNativeTarget "WJTestOneTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				DAFBF9821DF93B34000B6720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFBF9831DF93B34000B6720 /* Build configuration list for PBXNativeTarget "WJTestOneUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				DAFBF9851DF93B34000B6720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+Swizzling.h"
 
 @interface ViewController ()
 
@@ -17,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self rangTest:@"nsmj2"];
-    NSLog(@"123");
-    [self testRange];
-    NSLog(@"456");
+//    [self rangTest:@"nsmj2"];
+//    NSLog(@"123");
+//    [self testRange];
+//    NSLog(@"456");
 }
 
 //测试NSRange NSMutableCharacterSet
