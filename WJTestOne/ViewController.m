@@ -22,6 +22,7 @@
 //    NSLog(@"123");
 //    [self testRange];
 //    NSLog(@"456");
+    NSLog(@"我是主干");
 }
 
 //测试NSRange NSMutableCharacterSet
