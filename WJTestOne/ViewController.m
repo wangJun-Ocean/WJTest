@@ -21,6 +21,7 @@
     NSLog(@"123");
     [self testRange];
     NSLog(@"456");
+    NSLog(@"测试分支");
 }
 
 //测试NSRange NSMutableCharacterSet
