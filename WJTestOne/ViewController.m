@@ -22,7 +22,12 @@
 //    NSLog(@"123");
 //    [self testRange];
 //    NSLog(@"456");
-    NSLog(@"我是主干");
+    [self rangTest:@"nsmj2"];
+    NSLog(@"123");
+    [self testRange];
+    NSLog(@"456");
+    NSLog(@"测试分支");
+    NSLog(@"测试分支2");
 }
 
 //测试NSRange NSMutableCharacterSet
