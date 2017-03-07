@@ -23,11 +23,14 @@
     NSLog(@"456");
     NSLog(@"测试分支");
     NSLog(@"测试分支2");
+    
 }
 
 //测试NSRange NSMutableCharacterSet
 - (void)rangTest: (NSString *)str
 {
+     NSLog(@"测试分支aaa");
+    
     NSLog(@"78910");
     NSMutableCharacterSet *allowedCharacterset = [[NSCharacterSet URLQueryAllowedCharacterSet] mutableCopy];
     [allowedCharacterset removeCharactersInString:str];
