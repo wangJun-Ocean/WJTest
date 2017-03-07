@@ -30,6 +30,7 @@
 - (void)rangTest: (NSString *)str
 {
      NSLog(@"测试分支aaa");
+    NSLog(@"测试分支bbb");
     
     NSLog(@"78910");
     NSMutableCharacterSet *allowedCharacterset = [[NSCharacterSet URLQueryAllowedCharacterSet] mutableCopy];
