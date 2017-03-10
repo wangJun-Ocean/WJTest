@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIViewController+Swizzling.h"
+#import "TestPropertyInvoke.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,7 @@
     NSLog(@"456");
     NSLog(@"测试分支");
     NSLog(@"测试分支2");
-    
+    [self testBlock];
 }
 
 //测试NSRange NSMutableCharacterSet
@@ -83,7 +84,19 @@
 //        temp2 = [temp2 stringByAppendingString:[str2 substringWithRange:range]];
 //        NSLog(@"%@",temp2);
 //    }
-
 }
+
+- (void)testBlock
+{
+    int x = 123;
+    int y = 456;
+    
+    void(^aBlock)(int) = ^(int z) {
+        printf("%d %d %d\n",x,y,z);
+    };
+    aBlock(789);
+}
+
+
 
 @end

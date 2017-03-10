@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA428D7D1E69652B002322B6 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */; };
+		DAC9D6A41E713F050055DABE /* TestPropertyInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9D6A31E713F050055DABE /* TestPropertyInvoke.m */; };
 		DAFBF9551DF93B34000B6720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF9541DF93B34000B6720 /* main.m */; };
 		DAFBF9581DF93B34000B6720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF9571DF93B34000B6720 /* AppDelegate.m */; };
 		DAFBF95B1DF93B34000B6720 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF95A1DF93B34000B6720 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		DA428D7B1E69652B002322B6 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
 		DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		DAC9D6A21E713F050055DABE /* TestPropertyInvoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPropertyInvoke.h; sourceTree = "<group>"; };
+		DAC9D6A31E713F050055DABE /* TestPropertyInvoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPropertyInvoke.m; sourceTree = "<group>"; };
 		DAFBF9501DF93B34000B6720 /* WJTestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJTestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFBF9541DF93B34000B6720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAFBF9561DF93B34000B6720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				DAFBF95A1DF93B34000B6720 /* ViewController.m */,
 				DA428D7B1E69652B002322B6 /* UIViewController+Swizzling.h */,
 				DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */,
+				DAC9D6A21E713F050055DABE /* TestPropertyInvoke.h */,
+				DAC9D6A31E713F050055DABE /* TestPropertyInvoke.m */,
 				DAFBF95C1DF93B34000B6720 /* Main.storyboard */,
 				DAFBF95F1DF93B34000B6720 /* Assets.xcassets */,
 				DAFBF9611DF93B34000B6720 /* LaunchScreen.storyboard */,
@@ -284,6 +289,7 @@
 				DA428D7D1E69652B002322B6 /* UIViewController+Swizzling.m in Sources */,
 				DAFBF95B1DF93B34000B6720 /* ViewController.m in Sources */,
 				DAFBF9581DF93B34000B6720 /* AppDelegate.m in Sources */,
+				DAC9D6A41E713F050055DABE /* TestPropertyInvoke.m in Sources */,
 				DAFBF9551DF93B34000B6720 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
