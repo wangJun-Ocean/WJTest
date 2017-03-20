@@ -95,6 +95,7 @@
 {
     int x = 123;
     int y = 456;
+    NSLog(@"test分支4");
     
     void(^aBlock)(int) = ^(int z) {
         printf("%d %d %d\n",x,y,z);
