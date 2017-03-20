@@ -84,6 +84,7 @@
 //        temp2 = [temp2 stringByAppendingString:[str2 substringWithRange:range]];
 //        NSLog(@"%@",temp2);
 //    }
+    NSLog(@"test分支");
 }
 
 - (void)testBlock
