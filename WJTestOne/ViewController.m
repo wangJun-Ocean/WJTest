@@ -88,7 +88,7 @@
     NSLog(@"test分支2");
     NSLog(@"test分支3");
      NSLog(@"test分支3");
-    NSLog(@"test分支3");
+    NSLog(@"test分支3");NSLog(@"test分支3");
 }
 
 - (void)testBlock
