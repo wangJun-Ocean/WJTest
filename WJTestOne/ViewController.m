@@ -85,6 +85,7 @@
 //        NSLog(@"%@",temp2);
 //    }
     NSLog(@"test分支");
+    NSLog(@"test分支2");
 }
 
 - (void)testBlock
