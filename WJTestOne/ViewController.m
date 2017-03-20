@@ -97,6 +97,14 @@
     aBlock(789);
 }
 
-
+- (void)testBlockB
+{
+    int x = 123;
+    int y = 456;
+    void(^bBlock)(int) = ^(int z) {
+        NSLog(@"%d %d %d",x,y,z);
+    };
+    bBlock(789);
+}
 
 @end
