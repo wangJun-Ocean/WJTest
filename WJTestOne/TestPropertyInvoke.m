@@ -27,4 +27,21 @@
     NSLog(@"%@,%@",self.b,_c);
 }
 
+- (void)testActionWith:(Bblock)block
+{
+    _byBlock = block;
+    
+    NSString *striData = @"TestPropertyInvoke say hello to VC";
+    _byBlock(striData,^(id testData){
+        NSLog(@"TestPropertyInvoke get response from VC: %@",testData);
+    });
+}
+
+
+- (NSString *)returnStringWithBlock:(void (^)(NSString * _Nonnull, id _Nullable))success
+{
+    NSString *str = [NSString stringWithFormat:@"%@",success];
+    return str;
+}
+
 @end

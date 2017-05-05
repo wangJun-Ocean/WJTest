@@ -20,9 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    [self rangTest:@"nsmj2"];
-//    NSLog(@"123");
 //    [self testRange];
-//    NSLog(@"456");
     [self rangTest:@"nsmj2"];
     NSLog(@"123");
     [self testRange];
@@ -30,6 +28,14 @@
     NSLog(@"测试分支");
     NSLog(@"测试分支2");
     [self testBlock];
+    
+    [self testManyBlocks];
+    
+//    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    
+}
+- (IBAction)goToNextVCButtonClick:(id)sender {
 }
 
 //测试NSRange NSMutableCharacterSet
@@ -85,10 +91,6 @@
 //        NSLog(@"%@",temp2);
 //    }
     NSLog(@"test分支");
-    NSLog(@"test分支2");
-    NSLog(@"test分支3");
-     NSLog(@"test分支3");
-    NSLog(@"test分支3");NSLog(@"test分支3");
 }
 
 - (void)testBlock
@@ -96,7 +98,6 @@
     int x = 123;
     int y = 456;
     NSLog(@"test分支4");
-    NSLog(@"test分支5,xia");
     
     void(^aBlock)(int) = ^(int z) {
         printf("%d %d %d\n",x,y,z);
@@ -112,6 +113,21 @@
         NSLog(@"%d %d %d",x,y,z);
     };
     bBlock(789);
+}
+
+- (void)testManyBlocks
+{
+    TestPropertyInvoke *testBlocks = [[TestPropertyInvoke alloc] init];
+    [testBlocks testActionWith:^(id data, Ablock testBlock) {
+        NSLog(@"get message from TestPropertyInvoke:%@",data);
+        if (testBlock) {
+            testBlock(@"response for message from VC");
+        }
+    }];
+    
+    void(^success)() = ^(NSString *dataStr, id test){
+        
+    };
 }
 
 @end

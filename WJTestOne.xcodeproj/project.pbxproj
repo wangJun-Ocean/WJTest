@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA428D7D1E69652B002322B6 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */; };
+		DA957F111E8D0E31001599B7 /* TextBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA957F101E8D0E31001599B7 /* TextBlockViewController.m */; };
 		DAC9D6A41E713F050055DABE /* TestPropertyInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC9D6A31E713F050055DABE /* TestPropertyInvoke.m */; };
 		DAFBF9551DF93B34000B6720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF9541DF93B34000B6720 /* main.m */; };
 		DAFBF9581DF93B34000B6720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFBF9571DF93B34000B6720 /* AppDelegate.m */; };
@@ -39,12 +40,14 @@
 /* Begin PBXFileReference section */
 		DA428D7B1E69652B002322B6 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
 		DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		DA957F0F1E8D0E31001599B7 /* TextBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBlockViewController.h; sourceTree = "<group>"; };
+		DA957F101E8D0E31001599B7 /* TextBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBlockViewController.m; sourceTree = "<group>"; };
 		DAC9D6A21E713F050055DABE /* TestPropertyInvoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPropertyInvoke.h; sourceTree = "<group>"; };
 		DAC9D6A31E713F050055DABE /* TestPropertyInvoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPropertyInvoke.m; sourceTree = "<group>"; };
 		DAFBF9501DF93B34000B6720 /* WJTestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJTestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFBF9541DF93B34000B6720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAFBF9561DF93B34000B6720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DAFBF9571DF93B34000B6720 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAFBF9561DF93B34000B6720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../WJTestOne/AppDelegate.h; sourceTree = "<group>"; };
+		DAFBF9571DF93B34000B6720 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../WJTestOne/AppDelegate.m; sourceTree = "<group>"; };
 		DAFBF9591DF93B34000B6720 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DAFBF95A1DF93B34000B6720 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DAFBF95D1DF93B34000B6720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,9 +87,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA868C281EA9A5C30071B494 /* TestARCAndMRC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestARCAndMRC;
+			sourceTree = "<group>";
+		};
+		DA868C291EA9A5EC0071B494 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBF9561DF93B34000B6720 /* AppDelegate.h */,
+				DAFBF9571DF93B34000B6720 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		DAFBF9471DF93B34000B6720 = {
 			isa = PBXGroup;
 			children = (
+				DA868C291EA9A5EC0071B494 /* AppDelegate */,
+				DA868C281EA9A5C30071B494 /* TestARCAndMRC */,
 				DAFBF9521DF93B34000B6720 /* WJTestOne */,
 				DAFBF96C1DF93B34000B6720 /* WJTestOneTests */,
 				DAFBF9771DF93B34000B6720 /* WJTestOneUITests */,
@@ -107,10 +128,10 @@
 		DAFBF9521DF93B34000B6720 /* WJTestOne */ = {
 			isa = PBXGroup;
 			children = (
-				DAFBF9561DF93B34000B6720 /* AppDelegate.h */,
-				DAFBF9571DF93B34000B6720 /* AppDelegate.m */,
 				DAFBF9591DF93B34000B6720 /* ViewController.h */,
 				DAFBF95A1DF93B34000B6720 /* ViewController.m */,
+				DA957F0F1E8D0E31001599B7 /* TextBlockViewController.h */,
+				DA957F101E8D0E31001599B7 /* TextBlockViewController.m */,
 				DA428D7B1E69652B002322B6 /* UIViewController+Swizzling.h */,
 				DA428D7C1E69652B002322B6 /* UIViewController+Swizzling.m */,
 				DAC9D6A21E713F050055DABE /* TestPropertyInvoke.h */,
@@ -287,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA428D7D1E69652B002322B6 /* UIViewController+Swizzling.m in Sources */,
+				DA957F111E8D0E31001599B7 /* TextBlockViewController.m in Sources */,
 				DAFBF95B1DF93B34000B6720 /* ViewController.m in Sources */,
 				DAFBF9581DF93B34000B6720 /* AppDelegate.m in Sources */,
 				DAC9D6A41E713F050055DABE /* TestPropertyInvoke.m in Sources */,

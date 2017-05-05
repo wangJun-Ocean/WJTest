@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^Ablock)(id testData);
+typedef void(^Bblock)(id data, Ablock testBlock);
+
 @interface TestPropertyInvoke : NSObject
+
+@property (nonatomic, copy) Bblock byBlock;
+- (void)testActionWith:(Bblock)block;
+
 
 @property int a;
 @property (copy) NSString *b, *c;
